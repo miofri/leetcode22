@@ -1,3 +1,5 @@
+//solution without converting to string
+
 var isPalindrome = function (x) {
 	let xCopy = x
 	let mod = 0
