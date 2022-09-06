@@ -14,10 +14,8 @@ var lengthOfLongestSubstring = function (s) {
 	for (let index = 0; index < spreadStr.length; index++) {
 
 		if (subStr.includes(spreadStr[index])) {
-			index = index - subStr.length + 1
-			while (subStr.length > 0) {
-				subStr.pop()
-			}
+			let ind = subStr.indexOf(spreadStr[index])
+			subStr = subStr.slice(ind + 1)
 		}
 		subStr.push(spreadStr[index])
 		if (subStr.length > maxLen) {
