@@ -31,18 +31,6 @@ var myAtoi = function (s) {
 	return (result[0])
 };
 
-console.log('myAtoi:', myAtoi("00000-42a1234"))
-console.log('myAtoi:', myAtoi('+-123123'))
-console.log('myAtoi:', myAtoi('13123'))
-console.log('myAtoi:', myAtoi("words and 987"))
-console.log('myAtoi:', myAtoi("-91283472332"))
-console.log('myAtoi:', myAtoi(""))
-console.log('myAtoi:', myAtoi(".1"))
-console.log('myAtoi:', myAtoi("+1"))
-console.log('myAtoi:', myAtoi("     -42"))
-
-
-
 
 
 
