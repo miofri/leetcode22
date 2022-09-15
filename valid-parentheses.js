@@ -23,33 +23,11 @@ var isValid = function (string) {
 		}
 		else {
 			let popped = tmp.pop()
-
 			if (keyz[popped] !== s[i])
 				return false
 		}
 	}
 	if (tmp.length !== 0)
 		return false
-
 	return parenthesisCheck
 }
-
-// tests
-// s = "(){}}{"
-// console.log('should be false', isValid(s), '\n')
-// s = "{[]}"
-// console.log('should be true', isValid(s), '\n')
-// s = "()[]{}"
-// console.log('should be true', isValid(s), '\n')
-// s = "{()[]{}}"
-// console.log('should be true', isValid(s), '\n')
-// s = ")(){}}{"
-// console.log('should be false', isValid(s), '\n')
-// s = "(([]){})"
-// console.log('should be true', isValid(s), '\n')
-// s = "{{{}{}}}"
-// console.log('should be true', isValid(s), '\n')
-// s = "{{{(}{)}}}"
-// console.log('should be false', isValid(s), '\n')
-// s = "(("
-// console.log('should be false', isValid(s), '\n')
